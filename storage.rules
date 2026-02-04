@@ -1,0 +1,64 @@
+rules_version = '2';
+service firebase.storage {
+  match /b/{bucket}/o {
+    
+    // Public assets (logos, icons, etc.) - publicly readable
+    match /public/{allPaths=**} {
+      allow read: if true;
+      allow write: if false; // Only admins
+    }
+    
+    // Images folder (logos, branding) - publicly readable
+    match /images/{fileName} {
+      allow read: if true; // Public read access
+      allow write: if false; // Only admins
+    }
+    
+    // Curriculum media files (catechism audio, hymn audio, sheet music, children's images)
+    // Catechism audio is publicly readable
+    match /catechism/{fileName} {
+      allow read: if true; // Public read access for audio files
+      allow write: if false; // Only admins
+    }
+    
+    // Piano accompaniments - publicly readable (protected by UI subscription overlay)
+    match /accompaniments/{fileName} {
+      allow read: if true; // Public read access for audio files
+      allow write: if false; // Only admins via scripts
+    }
+    
+    // Vocal performances - publicly readable (protected by UI subscription overlay)
+    match /vocals/{fileName} {
+      allow read: if true; // Public read access for audio files
+      allow write: if false; // Only admins via scripts
+    }
+    
+    match /hymns/{weekId}/{fileName} {
+      allow read: if request.auth != null;
+      allow write: if false; // Only admins
+    }
+    
+    match /children/{weekId}/{fileName} {
+      allow read: if request.auth != null;
+      allow write: if false; // Only admins
+    }
+    
+    // Resources cover images - publicly readable, admin writable
+    match /resources/{fileName} {
+      allow read: if true; // Public read access for resource images
+      allow write: if request.auth != null; // Authenticated users (admin check is in UI/Firestore)
+    }
+    
+    // Liturgy files (doxology sheet music and audio) - publicly readable
+    match /liturgy/{fileName} {
+      allow read: if true; // Public read access for liturgy files
+      allow write: if false; // Only admins
+    }
+    
+    // User-specific files (future: profile photos, etc.)
+    match /users/{userId}/{fileName} {
+      allow read: if request.auth != null && request.auth.uid == userId;
+      allow write: if request.auth != null && request.auth.uid == userId;
+    }
+  }
+}

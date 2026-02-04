@@ -1,0 +1,114 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    
+    // Helper function to check if user is admin
+    function isAdmin() {
+      return request.auth != null && 
+             get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == 'admin';
+    }
+    
+    // Helper function to check if user is head of household
+    function isHeadOfHousehold(familyId) {
+      return request.auth != null && 
+             get(/databases/$(database)/documents/families/$(familyId)).data.headOfHousehold == request.auth.uid;
+    }
+    
+    // Helper function to check if user is a family manager (has isHeadOfHousehold flag)
+    function isFamilyManager() {
+      return request.auth != null && 
+             get(/databases/$(database)/documents/users/$(request.auth.uid)).data.isHeadOfHousehold == true;
+    }
+    
+    // Helper function to check if user is family member
+    function isFamilyMember(familyId) {
+      return request.auth != null && 
+             request.auth.uid in get(/databases/$(database)/documents/families/$(familyId)).data.members;
+    }
+    
+    // Users collection
+    match /users/{userId} {
+      // Users can read their own data
+      // Family managers can read their family members' data
+      // Admins can read all user data
+      allow read: if request.auth != null && (
+        request.auth.uid == userId ||
+        isAdmin() ||
+        (resource.data.familyId != null && isHeadOfHousehold(resource.data.familyId)) ||
+        (resource.data.familyId != null && isFamilyManager() &&
+         get(/databases/$(database)/documents/users/$(request.auth.uid)).data.familyId == resource.data.familyId)
+      );
+      
+      // Users can write their own data
+      // Admins can write any user data
+      allow write: if request.auth != null && (
+        request.auth.uid == userId ||
+        isAdmin()
+      );
+      
+      // Allow creation by authenticated users (during signup)
+      allow create: if request.auth != null;
+    }
+    
+    // Curriculum weeks collection
+    match /curriculum_weeks/{weekId} {
+      allow read: if request.auth != null;
+      allow write: if isAdmin();
+    }
+    
+    // Curriculum collection (imported from CSV)
+    match /curriculum/{docId} {
+      allow read: if true; // Public curriculum content
+      allow write: if isAdmin(); // Admins can edit curriculum
+    }
+    
+    // Resources collection
+    match /resources/{resourceId} {
+      allow read: if true; // Public resources - anyone can view
+      allow write: if isAdmin(); // Only admins can create/update/delete resources
+    }
+    
+    // Journal entries
+    match /journal_entries/{entryId} {
+      // Users can read/write their own entries
+      // Family managers can read their family members' entries
+      // Admins can read all entries
+      allow read: if request.auth != null && (
+        request.auth.uid == resource.data.userId ||
+        isAdmin() ||
+        (isFamilyManager() &&
+         exists(/databases/$(database)/documents/users/$(resource.data.userId)) &&
+         get(/databases/$(database)/documents/users/$(resource.data.userId)).data.familyId != null &&
+         get(/databases/$(database)/documents/users/$(request.auth.uid)).data.familyId ==
+         get(/databases/$(database)/documents/users/$(resource.data.userId)).data.familyId)
+      );
+      
+      allow write: if request.auth != null && request.auth.uid == resource.data.userId;
+      allow create: if request.auth != null && request.auth.uid == request.resource.data.userId;
+      allow delete: if request.auth != null && (
+        request.auth.uid == resource.data.userId ||
+        isAdmin()
+      );
+    }
+    
+    // Families collection
+    match /families/{familyId} {
+      // Family members can read their family data
+      // Admins can read all families
+      allow read: if request.auth != null && (
+        isFamilyMember(familyId) ||
+        isAdmin()
+      );
+      
+      // Only head of household can write family data
+      // Admins can write any family data
+      allow write: if request.auth != null && (
+        isHeadOfHousehold(familyId) ||
+        isAdmin()
+      );
+      
+      // Allow creation during family signup
+      allow create: if request.auth != null;
+    }
+  }
+}

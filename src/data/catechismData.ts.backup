@@ -1,0 +1,1516 @@
+/**
+ * Tune My Heart 52-Week Catechism
+ * Based on historic catechisms including Heidelberg, Westminster, Keach, and Spurgeon
+ * 
+ * AUTO-GENERATED FILE - Scripture text populated via ESV API
+ * Generated: 2025-12-16T19:14:33.282Z
+ */
+
+export interface CatechismQuestion {
+  week: number;
+  question: string;
+  answer: string;
+  answerChild: string; // Italicized portion for younger children to memorize
+  proofTexts: Array<{
+    reference: string;
+    text: string;
+  }>;
+  memoryVerse: {
+    reference: string;
+    text: string;
+  };
+}
+
+export const catechismQuestions: CatechismQuestion[] = [
+  {
+    week: 1,
+    question: "Who made you? What else did God make?",
+    answer: "God made me. God made all things.",
+    answerChild: "God made me. God made all things.",
+    proofTexts: [
+      {
+            reference: "Gen 1:26-27",
+            text: "Then God said, "Let us make man in our image, after our likeness. And let them have dominion over the fish of the sea and over the birds of the heavens and over the livestock and over all the earth and over every creeping thing that creeps on the earth."\n\n    So God created man in his own image,\n        in the image of God he created him;\n        male and female he created them."
+      },
+      {
+            reference: "Gen 2:7",
+            text: "then the LORD God formed the man of dust from the ground and breathed into his nostrils the breath of life, and the man became a living creature."
+      },
+      {
+            reference: "Eccl 12:1",
+            text: "Remember also your Creator in the days of your youth, before the evil days come and the years draw near of which you will say, "I have no pleasure in them";"
+      },
+      {
+            reference: "Acts 17:24-29",
+            text: "The God who made the world and everything in it, being Lord of heaven and earth, does not live in temples made by man, nor is he served by human hands, as though he needed anything, since he himself gives to all mankind life and breath and everything. And he made from one man every nation of mankind to live on all the face of the earth, having determined allotted periods and the boundaries of their dwelling place, that they should seek God, and perhaps feel their way toward him and find him. Yet he is actually not far from each one of us, for\n\n    "'In him we live and move and have our being';\n    \n    \n      as even some of your own poets have said,\n\n    "'For we are indeed his offspring.'\n    \n    \n      Being then God's offspring, we ought not to think that the divine being is like gold or silver or stone, an image formed by the art and imagination of man."
+      },
+      {
+            reference: "Gen 1:1",
+            text: "In the beginning, God created the heavens and the earth."
+      },
+      {
+            reference: "Gen 1:31",
+            text: "And God saw everything that he had made, and behold, it was very good. And there was evening and there was morning, the sixth day."
+      },
+      {
+            reference: "Acts 14:15",
+            text: ""Men, why are you doing these things? We also are men, of like nature with you, and we bring you good news, that you should turn from these vain things to a living God, who made the heaven and the earth and the sea and all that is in them."
+      },
+      {
+            reference: "Rom 11:36",
+            text: "For from him and through him and to him are all things. To him be glory forever. Amen."
+      },
+      {
+            reference: "Col 1:16",
+            text: "For by him all things were created, in heaven and on earth, visible and invisible, whether thrones or dominions or rulers or authorities—all things were created through him and for him."
+      }
+],
+    memoryVerse: {
+      reference: "Gen 1:1",
+      text: "In the beginning, God created the heavens and the earth."
+    }
+  },
+  {
+    week: 2,
+    question: "Why did God make you and all things?",
+    answer: "God made me to glorify him and enjoy him forever.",
+    answerChild: "God made me to glorify him and enjoy him forever.",
+    proofTexts: [
+      {
+            reference: "Ps 19:1",
+            text: "To the choirmaster. A Psalm of David.\n\n    The heavens declare the glory of God,\n        and the sky above proclaims his handiwork."
+      },
+      {
+            reference: "Jer 9:23-24",
+            text: "Thus says the LORD: "Let not the wise man boast in his wisdom, let not the mighty man boast in his might, let not the rich man boast in his riches, but let him who boasts boast in this, that he understands and knows me, that I am the LORD who practices steadfast love, justice, and righteousness in the earth. For in these things I delight, declares the LORD.""
+      },
+      {
+            reference: "Rev 4:11",
+            text: ""Worthy are you, our Lord and God,\n        to receive glory and honor and power,\n    for you created all things,\n        and by your will they existed and were created.""
+      }
+],
+    memoryVerse: {
+      reference: "1 Cor 10:31",
+      text: "So, whether you eat or drink, or whatever you do, do all to the glory of God."
+    }
+  },
+  {
+    week: 3,
+    question: "Why did God make you and all things?",
+    answer: "God made me to glorify him and enjoy him forever.",
+    answerChild: "God made me to glorify him and enjoy him forever.",
+    proofTexts: [
+      {
+            reference: "Ps 19:1",
+            text: "To the choirmaster. A Psalm of David.\n\n    The heavens declare the glory of God,\n        and the sky above proclaims his handiwork."
+      },
+      {
+            reference: "Jer 9:23-24",
+            text: "Thus says the LORD: “Let not the wise man boast in his wisdom, let not the mighty man boast in his might, let not the rich man boast in his riches, but let him who boasts boast in this, that he understands and knows me, that I am the LORD who practices steadfast love, justice, and righteousness in the earth. For in these things I delight, declares the LORD.”"
+      },
+      {
+            reference: "Rev 4:11",
+            text: "“Worthy are you, our Lord and God,\n        to receive glory and honor and power,\n    for you created all things,\n        and by your will they existed and were created.”"
+      }
+],
+    memoryVerse: {
+      reference: "1 Cor 10:31",
+      text: "So, whether you eat or drink, or whatever you do, do all to the glory of God."
+    }
+  },
+  {
+    week: 4,
+    question: "How did God make you and all things?",
+    answer: "God made all things out of nothing, by the Word of his power, in the space of six days, and all very good.",
+    answerChild: "God made all things out of nothing, by the Word of his power, in the space of six days, and all very good.",
+    proofTexts: [
+      {
+            reference: "Gen 1:1-31",
+            text: "In the beginning, God created the heavens and the earth. The earth was without form and void, and darkness was over the face of the deep. And the Spirit of God was hovering over the face of the waters.\n\n  And God said, “Let there be light,” and there was light. And God saw that the light was good. And God separated the light from the darkness. God called the light Day, and the darkness he called Night. And there was evening and there was morning, the first day.\n\n  And God said, “Let there be an expanse in the midst of the waters, and let it separate the waters from the waters.” And God made the expanse and separated the waters that were under the expanse from the waters that were above the expanse. And it was so. And God called the expanse Heaven. And there was evening and there was morning, the second day.\n\n  And God said, “Let the waters under the heavens be gathered together into one place, and let the dry land appear.” And it was so. God called the dry land Earth, and the waters that were gathered together he called Seas. And God saw that it was good.\n\n  And God said, “Let the earth sprout vegetation, plants yielding seed, and fruit trees bearing fruit in which is their seed, each according to its kind, on the earth.” And it was so. The earth brought forth vegetation, plants yielding seed according to their own kinds, and trees bearing fruit in which is their seed, each according to its kind. And God saw that it was good. And there was evening and there was morning, the third day.\n\n  And God said, “Let there be lights in the expanse of the heavens to separate the day from the night. And let them be for signs and for seasons, and for days and years, and let them be lights in the expanse of the heavens to give light upon the earth.” And it was so. And God made the two great lights—the greater light to rule the day and the lesser light to rule the night—and the stars. And God set them in the expanse of the heavens to give light on the earth, to rule over the day and over the night, and to separate the light from the darkness. And God saw that it was good. And there was evening and there was morning, the fourth day.\n\n  And God said, “Let the waters swarm with swarms of living creatures, and let birds fly above the earth across the expanse of the heavens.” So God created the great sea creatures and every living creature that moves, with which the waters swarm, according to their kinds, and every winged bird according to its kind. And God saw that it was good. And God blessed them, saying, “Be fruitful and multiply and fill the waters in the seas, and let birds multiply on the earth.” And there was evening and there was morning, the fifth day.\n\n  And God said, “Let the earth bring forth living creatures according to their kinds—livestock and creeping things and beasts of the earth according to their kinds.” And it was so. And God made the beasts of the earth according to their kinds and the livestock according to their kinds, and everything that creeps on the ground according to its kind. And God saw that it was good.\n\n  Then God said, “Let us make man in our image, after our likeness. And let them have dominion over the fish of the sea and over the birds of the heavens and over the livestock and over all the earth and over every creeping thing that creeps on the earth.”\n\n    So God created man in his own image,\n        in the image of God he created him;\n        male and female he created them.\n    \n    \n      And God blessed them. And God said to them, “Be fruitful and multiply and fill the earth and subdue it, and have dominion over the fish of the sea and over the birds of the heavens and over every living thing that moves on the earth.” And God said, “Behold, I have given you every plant yielding seed that is on the face of all the earth, and every tree with seed in its fruit. You shall have them for food. And to every beast of the earth and to every bird of the heavens and to everything that creeps on the earth, everything that has the breath of life, I have given every green plant for food.” And it was so. And God saw everything that he had made, and behold, it was very good. And there was evening and there was morning, the sixth day."
+      }
+],
+    memoryVerse: {
+      reference: "Gen 1:31",
+      text: "And God saw everything that he had made, and behold, it was very good. And there was evening and there was morning, the sixth day."
+    }
+  },
+  {
+    week: 5,
+    question: "What is special about God's creation of you?",
+    answer: "God made me in his own image.",
+    answerChild: "God made me in his own image.",
+    proofTexts: [
+      {
+            reference: "Gen 1:27",
+            text: "So God created man in his own image,\n        in the image of God he created him;\n        male and female he created them."
+      },
+      {
+            reference: "Gen 9:6",
+            text: "“Whoever sheds the blood of man,\n        by man shall his blood be shed,\n    for God made man in his own image."
+      }
+],
+    memoryVerse: {
+      reference: "Gen 1:27",
+      text: "So God created man in his own image,\n        in the image of God he created him;\n        male and female he created them."
+    }
+  },
+  {
+    week: 6,
+    question: "Who is God?",
+    answer: "God is a spirit and does not have a body like man. He is infinite, eternal, and unchangeable.",
+    answerChild: "God is a spirit.",
+    proofTexts: [
+      {
+            reference: "John 4:24",
+            text: "God is spirit, and those who worship him must worship in spirit and truth.”"
+      },
+      {
+            reference: "2 Cor 3:17",
+            text: "Now the Lord is the Spirit, and where the Spirit of the Lord is, there is freedom."
+      },
+      {
+            reference: "1 Tim 1:17",
+            text: "To the King of the ages, immortal, invisible, the only God, be honor and glory forever and ever. Amen."
+      }
+],
+    memoryVerse: {
+      reference: "Ps 86:8",
+      text: "There is none like you among the gods, O Lord,\n        nor are there any works like yours."
+    }
+  },
+  {
+    week: 7,
+    question: "What is God like?",
+    answer: "God is the first and best of beings. He is holy, powerful, and good.",
+    answerChild: "God is the first and best of beings. He is holy, powerful, and good.",
+    proofTexts: [
+      {
+            reference: "Ps 147:5",
+            text: "Great is our Lord, and abundant in power;\n        his understanding is beyond measure."
+      },
+      {
+            reference: "Jer 32:17",
+            text: "‘Ah, Lord GOD! It is you who have made the heavens and the earth by your great power and by your outstretched arm! Nothing is too hard for you."
+      },
+      {
+            reference: "Dan 4:34-35",
+            text: "At the end of the days I, Nebuchadnezzar, lifted my eyes to heaven, and my reason returned to me, and I blessed the Most High, and praised and honored him who lives forever,\n\n    for his dominion is an everlasting dominion,\n        and his kingdom endures from generation to generation;\n    all the inhabitants of the earth are accounted as nothing,\n        and he does according to his will among the host of heaven\n        and among the inhabitants of the earth;\n    and none can stay his hand\n        or say to him, “What have you done?”"
+      },
+      {
+            reference: "Eph 1:11",
+            text: "In him we have obtained an inheritance, having been predestined according to the purpose of him who works all things according to the counsel of his will,"
+      }
+],
+    memoryVerse: {
+      reference: "Isa 6:3",
+      text: "And one called to another and said:\n\n    “Holy, holy, holy is the LORD of hosts;\n    the whole earth is full of his glory!”"
+    }
+  },
+  {
+    week: 8,
+    question: "Are there more gods than one?",
+    answer: "No. There is only one true and living God.",
+    answerChild: "No. There is only one true and living God.",
+    proofTexts: [
+      {
+            reference: "Deut 6:4",
+            text: "“Hear, O Israel: The LORD our God, the LORD is one."
+      },
+      {
+            reference: "Jer 10:10",
+            text: "But the LORD is the true God;\n        he is the living God and the everlasting King.\n    At his wrath the earth quakes,\n        and the nations cannot endure his indignation."
+      },
+      {
+            reference: "Mark 12:29",
+            text: "Jesus answered, “The most important is, ‘Hear, O Israel: The Lord our God, the Lord is one."
+      },
+      {
+            reference: "Acts 17:22-31",
+            text: "So Paul, standing in the midst of the Areopagus, said: “Men of Athens, I perceive that in every way you are very religious. For as I passed along and observed the objects of your worship, I found also an altar with this inscription: ‘To the unknown god.’ What therefore you worship as unknown, this I proclaim to you. The God who made the world and everything in it, being Lord of heaven and earth, does not live in temples made by man, nor is he served by human hands, as though he needed anything, since he himself gives to all mankind life and breath and everything. And he made from one man every nation of mankind to live on all the face of the earth, having determined allotted periods and the boundaries of their dwelling place, that they should seek God, and perhaps feel their way toward him and find him. Yet he is actually not far from each one of us, for\n\n    “‘In him we live and move and have our being’;\n    \n    \n      as even some of your own poets have said,\n\n    “‘For we are indeed his offspring.’\n    \n    \n      Being then God’s offspring, we ought not to think that the divine being is like gold or silver or stone, an image formed by the art and imagination of man. The times of ignorance God overlooked, but now he commands all people everywhere to repent, because he has fixed a day on which he will judge the world in righteousness by a man whom he has appointed; and of this he has given assurance to all by raising him from the dead.”"
+      }
+],
+    memoryVerse: {
+      reference: "Deut 6:4",
+      text: "“Hear, O Israel: The LORD our God, the LORD is one."
+    }
+  },
+  {
+    week: 9,
+    question: "In how many persons does this one God exist?",
+    answer: "God exists in three persons: the Father, the Son, and the Holy Spirit, equal in essence, power, and glory.",
+    answerChild: "God exists in three persons.",
+    proofTexts: [
+      {
+            reference: "Matt 3:16-17",
+            text: "And when Jesus was baptized, immediately he went up from the water, and behold, the heavens were opened to him, and he saw the Spirit of God descending like a dove and coming to rest on him; and behold, a voice from heaven said, “This is my beloved Son, with whom I am well pleased.”"
+      },
+      {
+            reference: "John 5:23",
+            text: "that all may honor the Son, just as they honor the Father. Whoever does not honor the Son does not honor the Father who sent him."
+      },
+      {
+            reference: "John 10:30",
+            text: "I and the Father are one.”"
+      },
+      {
+            reference: "John 14:9-10",
+            text: "Jesus said to him, “Have I been with you so long, and you still do not know me, Philip? Whoever has seen me has seen the Father. How can you say, ‘Show us the Father’? Do you not believe that I am in the Father and the Father is in me? The words that I say to you I do not speak on my own authority, but the Father who dwells in me does his works."
+      },
+      {
+            reference: "John 15:26",
+            text: "“But when the Helper comes, whom I will send to you from the Father, the Spirit of truth, who proceeds from the Father, he will bear witness about me."
+      },
+      {
+            reference: "John 16:13-15",
+            text: "When the Spirit of truth comes, he will guide you into all the truth, for he will not speak on his own authority, but whatever he hears he will speak, and he will declare to you the things that are to come. He will glorify me, for he will take what is mine and declare it to you. All that the Father has is mine; therefore I said that he will take what is mine and declare it to you."
+      },
+      {
+            reference: "1 John 5:20",
+            text: "And we know that the Son of God has come and has given us understanding, so that we may know him who is true; and we are in him who is true, in his Son Jesus Christ. He is the true God and eternal life."
+      },
+      {
+            reference: "Rev 1:4-5",
+            text: "John to the seven churches that are in Asia:\n\n  Grace to you and peace from him who is and who was and who is to come, and from the seven spirits who are before his throne, and from Jesus Christ the faithful witness, the firstborn of the dead, and the ruler of kings on earth.\n\n  To him who loves us and has freed us from our sins by his blood"
+      }
+],
+    memoryVerse: {
+      reference: "2 Cor 13:14",
+      text: "The grace of the Lord Jesus Christ and the love of God and the fellowship of the Holy Spirit be with you all."
+    }
+  },
+  {
+    week: 10,
+    question: "What are the decrees of God?",
+    answer: "The decrees of God are his eternal purposes, whereby for his own glory he has ordained whatever comes to pass.",
+    answerChild: "The decrees of God are his eternal purposes, whereby for his own glory he has ordained whatever comes to pass.",
+    proofTexts: [
+      {
+            reference: "Eph 1:11-12",
+            text: "In him we have obtained an inheritance, having been predestined according to the purpose of him who works all things according to the counsel of his will, so that we who were the first to hope in Christ might be to the praise of his glory."
+      }
+],
+    memoryVerse: {
+      reference: "Dan 4:35",
+      text: "all the inhabitants of the earth are accounted as nothing,\n        and he does according to his will among the host of heaven\n        and among the inhabitants of the earth;\n    and none can stay his hand\n        or say to him, “What have you done?”"
+    }
+  },
+  {
+    week: 11,
+    question: "How do you know there is a God?",
+    answer: "The light of nature and the works of God plainly declare that there is a God, but only his Word and Spirit effectually reveal him to me for my salvation.",
+    answerChild: "The light of nature and God's Word reveal him to me.",
+    proofTexts: [
+      {
+            reference: "1 Thess 1:5-6",
+            text: "because our gospel came to you not only in word, but also in power and in the Holy Spirit and with full conviction. You know what kind of men we proved to be among you for your sake. And you became imitators of us and of the Lord, for you received the word in much affliction, with the joy of the Holy Spirit,"
+      },
+      {
+            reference: "1 Thess 2:13",
+            text: "And we also thank God constantly for this, that when you received the word of God, which you heard from us, you accepted it not as the word of men but as what it really is, the word of God, which is at work in you believers."
+      },
+      {
+            reference: "2 Tim 3:15-16",
+            text: "and how from childhood you have been acquainted with the sacred writings, which are able to make you wise for salvation through faith in Christ Jesus. All Scripture is breathed out by God and profitable for teaching, for reproof, for correction, and for training in righteousness,"
+      },
+      {
+            reference: "James 1:18",
+            text: "Of his own will he brought us forth by the word of truth, that we should be a kind of firstfruits of his creatures."
+      },
+      {
+            reference: "1 Pet 1:22-23",
+            text: "Having purified your souls by your obedience to the truth for a sincere brotherly love, love one another earnestly from a pure heart, since you have been born again, not of perishable seed but of imperishable, through the living and abiding word of God;"
+      }
+],
+    memoryVerse: {
+      reference: "James 1:18",
+      text: "Of his own will he brought us forth by the word of truth, that we should be a kind of firstfruits of his creatures."
+    }
+  },
+  {
+    week: 12,
+    question: "What rule has God given to direct you how you may glorify and enjoy him?",
+    answer: "The Word of God, which is contained in the Scriptures of the Old and New Testaments, is the only rule to direct me how I may glorify God and enjoy Him.",
+    answerChild: "The Word of God is the only rule.",
+    proofTexts: [
+      {
+            reference: "Job 11:7",
+            text: "“Can you find out the deep things of God?\n        Can you find out the limit of the Almighty?"
+      },
+      {
+            reference: "Ps 119:104",
+            text: "Through your precepts I get understanding;\n        therefore I hate every false way."
+      },
+      {
+            reference: "Isa 8:20",
+            text: "To the teaching and to the testimony! If they will not speak according to this word, it is because they have no dawn."
+      },
+      {
+            reference: "Matt 22:29",
+            text: "But Jesus answered them, “You are wrong, because you know neither the Scriptures nor the power of God."
+      },
+      {
+            reference: "2 Tim 3:15-17",
+            text: "and how from childhood you have been acquainted with the sacred writings, which are able to make you wise for salvation through faith in Christ Jesus. All Scripture is breathed out by God and profitable for teaching, for reproof, for correction, and for training in righteousness, that the man of God may be complete, equipped for every good work."
+      }
+],
+    memoryVerse: {
+      reference: "2 Tim 3:16-17",
+      text: "All Scripture is breathed out by God and profitable for teaching, for reproof, for correction, and for training in righteousness, that the man of God may be complete, equipped for every good work."
+    }
+  },
+  {
+    week: 13,
+    question: "How can you glorify God?",
+    answer: "I can glorify God by loving him and doing what he commands.",
+    answerChild: "I can glorify God by loving him and doing what he commands.",
+    proofTexts: [
+      {
+            reference: "Eccl 12:13",
+            text: "The end of the matter; all has been heard. Fear God and keep his commandments, for this is the whole duty of man."
+      },
+      {
+            reference: "Mark 12:29-31",
+            text: "Jesus answered, “The most important is, ‘Hear, O Israel: The Lord our God, the Lord is one. And you shall love the Lord your God with all your heart and with all your soul and with all your mind and with all your strength.’ The second is this: ‘You shall love your neighbor as yourself.’ There is no other commandment greater than these.”"
+      },
+      {
+            reference: "John 15:8-10",
+            text: "[Text for John 15:8-10]"
+      },
+      {
+            reference: "1 Cor 10:31",
+            text: "[Text for 1 Cor 10:31]"
+      }
+],
+    memoryVerse: {
+      reference: "Deut 11:1",
+      text: "“You shall therefore love the LORD your God and keep his charge, his statutes, his rules, and his commandments always."
+    }
+  },
+  {
+    week: 14,
+    question: "What is the greatest commandment?",
+    answer: "The greatest commandment is to love the Lord my God with all my heart, soul, and mind.",
+    answerChild: "The greatest commandment is to love the Lord my God with all my heart, soul, and mind.",
+    proofTexts: [
+      {
+            reference: "Deut 6:4-5",
+            text: "[Text for Deut 6:4-5]"
+      },
+      {
+            reference: "Mark 12:29-30",
+            text: "[Text for Mark 12:29-30]"
+      }
+],
+    memoryVerse: {
+      reference: "Mark 12:30",
+      text: "[Text for Mark 12:30]"
+    }
+  },
+  {
+    week: 15,
+    question: "How can you come to know God and what he has made?",
+    answer: "The fear of the Lord is the beginning of knowledge.",
+    answerChild: "The fear of the Lord is the beginning of knowledge.",
+    proofTexts: [
+      {
+            reference: "Prov 1:7",
+            text: "[Text for Prov 1:7]"
+      }
+],
+    memoryVerse: {
+      reference: "Prov 1:7",
+      text: "[Text for Prov 1:7]"
+    }
+  },
+  {
+    week: 16,
+    question: "What is sin?",
+    answer: "Sin is any transgression against the law of God.",
+    answerChild: "Sin is any transgression against the law of God.",
+    proofTexts: [
+      {
+            reference: "1 John 3:4",
+            text: "[Text for 1 John 3:4]"
+      },
+      {
+            reference: "Rom 3:20",
+            text: "[Text for Rom 3:20]"
+      },
+      {
+            reference: "James 2:9-11",
+            text: "[Text for James 2:9-11]"
+      }
+],
+    memoryVerse: {
+      reference: "1 John 3:4",
+      text: "[Text for 1 John 3:4]"
+    }
+  },
+  {
+    week: 17,
+    question: "Can you keep the law of God perfectly?",
+    answer: "No. I am inclined by nature to hate God and my neighbor.",
+    answerChild: "No. I am inclined by nature to hate God and my neighbor.",
+    proofTexts: [
+      {
+            reference: "Prov 20:9",
+            text: "[Text for Prov 20:9]"
+      },
+      {
+            reference: "Eccl 7:20",
+            text: "[Text for Eccl 7:20]"
+      },
+      {
+            reference: "Rom 3:19-20",
+            text: "[Text for Rom 3:19-20]"
+      },
+      {
+            reference: "James 2:10",
+            text: "[Text for James 2:10]"
+      },
+      {
+            reference: "1 John 1:8",
+            text: "[Text for 1 John 1:8]"
+      },
+      {
+            reference: "1 John 1:10",
+            text: "[Text for 1 John 1:10]"
+      }
+],
+    memoryVerse: {
+      reference: "Rom 3:10",
+      text: "[Text for Rom 3:10]"
+    }
+  },
+  {
+    week: 18,
+    question: "What are the results of sin?",
+    answer: "Because of sin, all mankind lost communion with God and are under his wrath and curse, resulting in the miseries of this life, death itself, and the pains of hell forever.",
+    answerChild: "Sin results in God's wrath and curse.",
+    proofTexts: [
+      {
+            reference: "Deut 27:26",
+            text: "[Text for Deut 27:26]"
+      },
+      {
+            reference: "Rom 1:18",
+            text: "[Text for Rom 1:18]"
+      },
+      {
+            reference: "Rom 2:2",
+            text: "[Text for Rom 2:2]"
+      },
+      {
+            reference: "Gal 3:10",
+            text: "[Text for Gal 3:10]"
+      },
+      {
+            reference: "Eph 5:6",
+            text: "[Text for Eph 5:6]"
+      }
+],
+    memoryVerse: {
+      reference: "Rom 1:18",
+      text: "[Text for Rom 1:18]"
+    }
+  },
+  {
+    week: 19,
+    question: "Is there any way to escape the punishment of God and be again received into communion with him?",
+    answer: "God's justice demands that I make full payment, either through myself or through a Redeemer.",
+    answerChild: "God's justice demands that I make full payment, either through myself or through a Redeemer.",
+    proofTexts: [
+      {
+            reference: "2 Thess 2:13",
+            text: "[Text for 2 Thess 2:13]"
+      },
+      {
+            reference: "Rom 5:21",
+            text: "[Text for Rom 5:21]"
+      }
+],
+    memoryVerse: {
+      reference: "Isa 53:10-11",
+      text: "[Text for Isa 53:10-11]"
+    }
+  },
+  {
+    week: 20,
+    question: "What kind of Redeemer must you seek?",
+    answer: "I must seek a Redeemer who is truly human and also truly God.",
+    answerChild: "I must seek a Redeemer who is truly human and also truly God.",
+    proofTexts: [
+      {
+            reference: "Isa 9:6",
+            text: "[Text for Isa 9:6]"
+      },
+      {
+            reference: "Heb 4:14-16",
+            text: "[Text for Heb 4:14-16]"
+      }
+],
+    memoryVerse: {
+      reference: "Isa 9:6",
+      text: "[Text for Isa 9:6]"
+    }
+  },
+  {
+    week: 21,
+    question: "Why must the Redeemer be a true and righteous human?",
+    answer: "The Redeemer must be a true and righteous human because the justice of God requires that only one with a human nature who has not sinned may pay for my sin.",
+    answerChild: "Only a righteous human can pay for my sin.",
+    proofTexts: [
+      {
+            reference: "Rom 5:12",
+            text: "[Text for Rom 5:12]"
+      },
+      {
+            reference: "Rom 5:15",
+            text: "[Text for Rom 5:15]"
+      },
+      {
+            reference: "1 Cor 15:21",
+            text: "[Text for 1 Cor 15:21]"
+      },
+      {
+            reference: "Heb 2:14-16",
+            text: "[Text for Heb 2:14-16]"
+      },
+      {
+            reference: "Heb 7:26-27",
+            text: "[Text for Heb 7:26-27]"
+      },
+      {
+            reference: "1 Pet 3:18",
+            text: "[Text for 1 Pet 3:18]"
+      }
+],
+    memoryVerse: {
+      reference: "Heb 2:17",
+      text: "[Text for Heb 2:17]"
+    }
+  },
+  {
+    week: 22,
+    question: "Why must the Redeemer also be true God?",
+    answer: "The Redeemer must be true God so that by the power of his divine nature he might bear the burden of God's wrath and restore to me righteousness and life.",
+    answerChild: "The Redeemer must be God to bear God's wrath.",
+    proofTexts: [
+      {
+            reference: "Isa 9:5",
+            text: "[Text for Isa 9:5]"
+      },
+      {
+            reference: "Deut 4:24",
+            text: "[Text for Deut 4:24]"
+      },
+      {
+            reference: "Nah 1:6",
+            text: "[Text for Nah 1:6]"
+      },
+      {
+            reference: "Ps 130:3",
+            text: "[Text for Ps 130:3]"
+      },
+      {
+            reference: "Isa 53:5",
+            text: "[Text for Isa 53:5]"
+      },
+      {
+            reference: "Isa 53:11",
+            text: "[Text for Isa 53:11]"
+      },
+      {
+            reference: "John 3:16",
+            text: "[Text for John 3:16]"
+      },
+      {
+            reference: "2 Cor 5:21",
+            text: "[Text for 2 Cor 5:21]"
+      }
+],
+    memoryVerse: {
+      reference: "Acts 2:24",
+      text: "[Text for Acts 2:24]"
+    }
+  },
+  {
+    week: 23,
+    question: "Who is that Redeemer who at the same time is true God and a true and righteous human?",
+    answer: "My only Redeemer is the Lord Jesus Christ, the eternal Son of God, who became human and died to pay the penalty for sin.",
+    answerChild: "My only Redeemer is the Lord Jesus Christ.",
+    proofTexts: [
+      {
+            reference: "1 Tim 2:5",
+            text: "For there is one God, and there is one mediator between God and men, the man Christ Jesus,"
+      },
+      {
+            reference: "John 1:14",
+            text: "And the Word became flesh and dwelt among us, and we have seen his glory, glory as of the only Son from the Father, full of grace and truth."
+      },
+      {
+            reference: "1 Tim 3:16",
+            text: "Great indeed, we confess, is the mystery of godliness:\n\n    He was manifested in the flesh,\n        vindicated by the Spirit,\n            seen by angels,\n    proclaimed among the nations,\n        believed on in the world,\n            taken up in glory."
+      },
+      {
+            reference: "Col 2:9",
+            text: "For in him the whole fullness of deity dwells bodily,"
+      }
+],
+    memoryVerse: {
+      reference: "1 Tim 2:5",
+      text: "[Text for 1 Tim 2:5]"
+    }
+  },
+  {
+    week: 24,
+    question: "How did Christ, being the Son of God, become human?",
+    answer: "Christ, the Son of God became human by taking to himself true human nature, being conceived by the Holy Spirit and the virgin Mary.",
+    answerChild: "Christ was conceived by the Holy Spirit and born of the virgin Mary.",
+    proofTexts: [
+      {
+            reference: "Matt 26:38",
+            text: "Then he said to them, “My soul is very sorrowful, even to death; remain here, and watch with me.”"
+      },
+      {
+            reference: "Heb 4:15",
+            text: "For we do not have a high priest who is unable to sympathize with our weaknesses, but one who in every respect has been tempted as we are, yet without sin."
+      },
+      {
+            reference: "Heb 7:26",
+            text: "For it was indeed fitting that we should have such a high priest, holy, innocent, unstained, separated from sinners, and exalted above the heavens."
+      },
+      {
+            reference: "Luke 1:31",
+            text: "And behold, you will conceive in your womb and bear a son, and you shall call his name Jesus."
+      },
+      {
+            reference: "Luke 1:35",
+            text: "And the angel answered her, “The Holy Spirit will come upon you, and the power of the Most High will overshadow you; therefore the child to be born will be called holy—the Son of God."
+      }
+],
+    memoryVerse: {
+      reference: "Gal 4:4",
+      text: "But when the fullness of time had come, God sent forth his Son, born of woman, born under the law,"
+    }
+  },
+  {
+    week: 25,
+    question: "How did Christ satisfy God's just wrath for sin?",
+    answer: "Christ suffered the miseries of this life, the wrath of God, and the cursed death of the cross.",
+    answerChild: "Christ suffered the miseries of this life, the wrath of God, and the cursed death of the cross.",
+    proofTexts: [
+      {
+            reference: "Ps 22",
+            text: "To the choirmaster: according to The Doe of the Dawn. A Psalm of David.\n\n    My God, my God, why have you forsaken me?\n        Why are you so far from saving me, from the words of my groaning?\n    O my God, I cry by day, but you do not answer,\n        and by night, but I find no rest.\n    \n    \n    Yet you are holy,\n        enthroned on the praises of Israel.\n    In you our fathers trusted;\n        they trusted, and you delivered them.\n    To you they cried and were rescued;\n        in you they trusted and were not put to shame.\n    \n    \n    But I am a worm and not a man,\n        scorned by mankind and despised by the people.\n    All who see me mock me;\n        they make mouths at me; they wag their heads;\n    “He trusts in the LORD; let him deliver him;\n        let him rescue him, for he delights in him!”\n    \n    \n    Yet you are he who took me from the womb;\n        you made me trust you at my mother’s breasts.\n    On you was I cast from my birth,\n        and from my mother’s womb you have been my God.\n    Be not far from me,\n        for trouble is near,\n        and there is none to help.\n    \n    \n    Many bulls encompass me;\n        strong bulls of Bashan surround me;\n    they open wide their mouths at me,\n        like a ravening and roaring lion.\n    \n    \n    I am poured out like water,\n        and all my bones are out of joint;\n    my heart is like wax;\n        it is melted within my breast;\n    my strength is dried up like a potsherd,\n        and my tongue sticks to my jaws;\n        you lay me in the dust of death.\n    \n    \n    For dogs encompass me;\n        a company of evildoers encircles me;\n    they have pierced my hands and feet—\n    I can count all my bones—\n    they stare and gloat over me;\n    they divide my garments among them,\n        and for my clothing they cast lots.\n    \n    \n    But you, O LORD, do not be far off!\n        O you my help, come quickly to my aid!\n    Deliver my soul from the sword,\n        my precious life from the power of the dog!\n        Save me from the mouth of the lion!\n    You have rescued me from the horns of the wild oxen!\n    \n    \n    I will tell of your name to my brothers;\n        in the midst of the congregation I will praise you:\n    You who fear the LORD, praise him!\n        All you offspring of Jacob, glorify him,\n        and stand in awe of him, all you offspring of Israel!\n    For he has not despised or abhorred\n        the affliction of the afflicted,\n    and he has not hidden his face from him,\n        but has heard, when he cried to him.\n    \n    \n    From you comes my praise in the great congregation;\n        my vows I will perform before those who fear him.\n    The afflicted shall eat and be satisfied;\n        those who seek him shall praise the LORD!\n        May your hearts live forever!\n    \n    \n    All the ends of the earth shall remember\n        and turn to the LORD,\n    and all the families of the nations\n        shall worship before you.\n    For kingship belongs to the LORD,\n        and he rules over the nations.\n    \n    \n    All the prosperous of the earth eat and worship;\n        before him shall bow all who go down to the dust,\n        even the one who could not keep himself alive.\n    Posterity shall serve him;\n        it shall be told of the Lord to the coming generation;\n    they shall come and proclaim his righteousness to a people yet unborn,\n        that he has done it."
+      },
+      {
+            reference: "Isa 53",
+            text: "Who has believed what he has heard from us?\n        And to whom has the arm of the LORD been revealed?\n    For he grew up before him like a young plant,\n        and like a root out of dry ground;\n    he had no form or majesty that we should look at him,\n        and no beauty that we should desire him.\n    He was despised and rejected by men,\n        a man of sorrows and acquainted with grief;\n    and as one from whom men hide their faces\n        he was despised, and we esteemed him not.\n    \n    \n    Surely he has borne our griefs\n        and carried our sorrows;\n    yet we esteemed him stricken,\n        smitten by God, and afflicted.\n    But he was pierced for our transgressions;\n        he was crushed for our iniquities;\n    upon him was the chastisement that brought us peace,\n        and with his wounds we are healed.\n    All we like sheep have gone astray;\n        we have turned—every one—to his own way;\n    and the LORD has laid on him\n        the iniquity of us all.\n    \n    \n    He was oppressed, and he was afflicted,\n        yet he opened not his mouth;\n    like a lamb that is led to the slaughter,\n        and like a sheep that before its shearers is silent,\n        so he opened not his mouth.\n    By oppression and judgment he was taken away;\n        and as for his generation, who considered\n    that he was cut off out of the land of the living,\n        stricken for the transgression of my people?\n    And they made his grave with the wicked\n        and with a rich man in his death,\n    although he had done no violence,\n        and there was no deceit in his mouth.\n    \n    \n    Yet it was the will of the LORD to crush him;\n        he has put him to grief;\n    when his soul makes an offering for guilt,\n        he shall see his offspring; he shall prolong his days;\n    the will of the LORD shall prosper in his hand.\n    Out of the anguish of his soul he shall see and be satisfied;\n    by his knowledge shall the righteous one, my servant,\n        make many to be accounted righteous,\n        and he shall bear their iniquities.\n    Therefore I will divide him a portion with the many,\n        and he shall divide the spoil with the strong,\n    because he poured out his soul to death\n        and was numbered with the transgressors;\n    yet he bore the sin of many,\n        and makes intercession for the transgressors."
+      }
+],
+    memoryVerse: {
+      reference: "Phil 2:8",
+      text: "And being found in human form, he humbled himself by becoming obedient to the point of death, even death on a cross."
+    }
+  },
+  {
+    week: 26,
+    question: "Why was it necessary for Christ to humble himself even unto death?",
+    answer: "Christ humbled himself unto death because the justice of God required that satisfaction for my sins could be made in no other way than by the death of the Son of God.",
+    answerChild: "Only Christ's death could satisfy God's justice.",
+    proofTexts: [
+      {
+            reference: "Matt 27:46",
+            text: "And about the ninth hour Jesus cried out with a loud voice, saying, “Eli, Eli, lema sabachthani?” that is, “My God, my God, why have you forsaken me?”"
+      },
+      {
+            reference: "Phil 2:8",
+            text: "And being found in human form, he humbled himself by becoming obedient to the point of death, even death on a cross."
+      }
+],
+    memoryVerse: {
+      reference: "Col 1:21-22",
+      text: "And you, who once were alienated and hostile in mind, doing evil deeds, he has now reconciled in his body of flesh by his death, in order to present you holy and blameless and above reproach before him,"
+    }
+  },
+  {
+    week: 27,
+    question: "Did Christ stay dead?",
+    answer: "No. Christ rose again from the dead on the third day.",
+    answerChild: "No. Christ rose again from the dead on the third day.",
+    proofTexts: [
+      {
+            reference: "Luke 24:45-47",
+            text: "[Text for Luke 24:45-47]"
+      },
+      {
+            reference: "1 Cor 15:3-4",
+            text: "[Text for 1 Cor 15:3-4]"
+      }
+],
+    memoryVerse: {
+      reference: "1 Cor 15:3-4",
+      text: "For I delivered to you as of first importance what I also received: that Christ died for our sins in accordance with the Scriptures, that he was buried, that he was raised on the third day in accordance with the Scriptures,"
+    }
+  },
+  {
+    week: 28,
+    question: "How are you made a partaker of the redemption purchased by Christ?",
+    answer: "I am made a partaker of the redemption purchased by Christ through repentant faith in him and his substitutionary atoning death.",
+    answerChild: "Through repentant faith in Christ.",
+    proofTexts: [
+      {
+            reference: "Mark 1:15",
+            text: "and saying, “The time is fulfilled, and the kingdom of God is at hand; repent and believe in the gospel.”"
+      },
+      {
+            reference: "Luke 13:3",
+            text: "No, I tell you; but unless you repent, you will all likewise perish."
+      },
+      {
+            reference: "Luke 13:5",
+            text: "No, I tell you; but unless you repent, you will all likewise perish.”"
+      },
+      {
+            reference: "Acts 2:37-41",
+            text: "Now when they heard this they were cut to the heart, and said to Peter and the rest of the apostles, “Brothers, what shall we do?” And Peter said to them, “Repent and be baptized every one of you in the name of Jesus Christ for the forgiveness of your sins, and you will receive the gift of the Holy Spirit. For the promise is for you and for your children and for all who are far off, everyone whom the Lord our God calls to himself.” And with many other words he bore witness and continued to exhort them, saying, “Save yourselves from this crooked generation.” So those who received his word were baptized, and there were added that day about three thousand souls."
+      },
+      {
+            reference: "Acts 16:30-31",
+            text: "Then he brought them out and said, “Sirs, what must I do to be saved?” And they said, “Believe in the Lord Jesus, and you will be saved, you and your household.”"
+      },
+      {
+            reference: "Acts 20:21",
+            text: "testifying both to Jews and to Greeks of repentance toward God and of faith in our Lord Jesus Christ."
+      },
+      {
+            reference: "Acts 26:20",
+            text: "[Text for Acts 26:20]"
+      }
+],
+    memoryVerse: {
+      reference: "Eph 2:8-9",
+      text: "For by grace you have been saved through faith. And this is not your own doing; it is the gift of God, not a result of works, so that no one may boast."
+    }
+  },
+  {
+    week: 29,
+    question: "What is faith in Jesus Christ?",
+    answer: "Faith in Jesus Christ is a saving grace, by which I receive and rest upon him alone for my salvation.",
+    answerChild: "Faith is a saving grace by which I rest upon Christ alone.",
+    proofTexts: [
+      {
+            reference: "John 14:6",
+            text: "Jesus said to him, “I am the way, and the truth, and the life. No one comes to the Father except through me."
+      },
+      {
+            reference: "Acts 4:12",
+            text: "And there is salvation in no one else, for there is no other name under heaven given among men by which we must be saved.”"
+      },
+      {
+            reference: "1 Tim 2:5",
+            text: "For there is one God, and there is one mediator between God and men, the man Christ Jesus,"
+      },
+      {
+            reference: "1 John 5:11-12",
+            text: "And this is the testimony, that God gave us eternal life, and this life is in his Son. Whoever has the Son has life; whoever does not have the Son of God does not have life."
+      }
+],
+    memoryVerse: {
+      reference: "Gal 2:20",
+      text: "I have been crucified with Christ. It is no longer I who live, but Christ who lives in me. And the life I now live in the flesh I live by faith in the Son of God, who loved me and gave himself for me."
+    }
+  },
+  {
+    week: 30,
+    question: "What is repentance unto life?",
+    answer: "Repentance unto life is a saving grace, by which I turn from my sin to God, promising to strive after new obedience.",
+    answerChild: "Repentance is turning from sin to God.",
+    proofTexts: [
+      {
+            reference: "Luke 19:8-10",
+            text: "And Zacchaeus stood and said to the Lord, “Behold, Lord, the half of my goods I give to the poor. And if I have defrauded anyone of anything, I restore it fourfold.” And Jesus said to him, “Today salvation has come to this house, since he also is a son of Abraham. For the Son of Man came to seek and to save the lost.”"
+      },
+      {
+            reference: "Rom 6:1-2",
+            text: "[Text for Rom 6:1-2]"
+      },
+      {
+            reference: "2 Cor 7:9-11",
+            text: "As it is, I rejoice, not because you were grieved, but because you were grieved into repenting. For you felt a godly grief, so that you suffered no loss through us.\n\n  For godly grief produces a repentance that leads to salvation without regret, whereas worldly grief produces death. For see what earnestness this godly grief has produced in you, but also what eagerness to clear yourselves, what indignation, what fear, what longing, what zeal, what punishment! At every point you have proved yourselves innocent in the matter."
+      },
+      {
+            reference: "1 Thess 1:9-10",
+            text: "For they themselves report concerning us the kind of reception we had among you, and how you turned to God from idols to serve the living and true God, and to wait for his Son from heaven, whom he raised from the dead, Jesus who delivers us from the wrath to come."
+      }
+],
+    memoryVerse: {
+      reference: "2 Cor 7:10",
+      text: "For godly grief produces a repentance that leads to salvation without regret, whereas worldly grief produces death."
+    }
+  },
+  {
+    week: 31,
+    question: "What benefits in this life come from repentant faith in Jesus Christ?",
+    answer: "Those who repent and believe in Jesus Christ partake of justification, adoption, and sanctification.",
+    answerChild: "Those who repent and believe in Jesus Christ partake of justification, adoption, and sanctification.",
+    proofTexts: [
+      {
+            reference: "Ezek 36:26",
+            text: "And I will give you a new heart, and a new spirit I will put within you. And I will remove the heart of stone from your flesh and give you a heart of flesh."
+      },
+      {
+            reference: "Rom 8:30",
+            text: "And those whom he predestined he also called, and those whom he called he also justified, and those whom he justified he also glorified."
+      },
+      {
+            reference: "Eph 1:5",
+            text: "he predestined us for adoption to himself as sons through Jesus Christ, according to the purpose of his will,"
+      }
+],
+    memoryVerse: {
+      reference: "Rom 8:30",
+      text: "And those whom he predestined he also called, and those whom he called he also justified, and those whom he justified he also glorified."
+    }
+  },
+  {
+    week: 32,
+    question: "What is justification?",
+    answer: "Justification is an act of God's free grace in which he pardons all my sins and accepts me as righteous in his sight only because of the righteousness of Christ imputed to me.",
+    answerChild: "Justification is God's free grace pardoning my sins.",
+    proofTexts: [
+      {
+            reference: "Zech 3:1-5",
+            text: "Then he showed me Joshua the high priest standing before the angel of the LORD, and Satan standing at his right hand to accuse him. And the LORD said to Satan, “The LORD rebuke you, O Satan! The LORD who has chosen Jerusalem rebuke you! Is not this a brand plucked from the fire?” Now Joshua was standing before the angel, clothed with filthy garments. And the angel said to those who were standing before him, “Remove the filthy garments from him.” And to him he said, “Behold, I have taken your iniquity away from you, and I will clothe you with pure vestments.” And I said, “Let them put a clean turban on his head.” So they put a clean turban on his head and clothed him with garments. And the angel of the LORD was standing by."
+      },
+      {
+            reference: "Rom 3:24-26",
+            text: "and are justified by his grace as a gift, through the redemption that is in Christ Jesus, whom God put forward as a propitiation by his blood, to be received by faith. This was to show God’s righteousness, because in his divine forbearance he had passed over former sins. It was to show his righteousness at the present time, so that he might be just and the justifier of the one who has faith in Jesus."
+      },
+      {
+            reference: "Rom 4:5",
+            text: "And to the one who does not work but believes in him who justifies the ungodly, his faith is counted as righteousness,"
+      },
+      {
+            reference: "Rom 5:17-19",
+            text: "For if, because of one man’s trespass, death reigned through that one man, much more will those who receive the abundance of grace and the free gift of righteousness reign in life through the one man Jesus Christ.\n\n  Therefore, as one trespass led to condemnation for all men, so one act of righteousness leads to justification and life for all men. For as by the one man’s disobedience the many were made sinners, so by the one man’s obedience the many will be made righteous."
+      },
+      {
+            reference: "Rom 8:33",
+            text: "Who shall bring any charge against God’s elect? It is God who justifies."
+      },
+      {
+            reference: "2 Cor 5:21",
+            text: "For our sake he made him to be sin who knew no sin, so that in him we might become the righteousness of God."
+      },
+      {
+            reference: "Heb 8:12",
+            text: "For I will be merciful toward their iniquities,\n        and I will remember their sins no more.”"
+      },
+      {
+            reference: "Phil 3:9",
+            text: "and be found in him, not having a righteousness of my own that comes from the law, but that which comes through faith in Christ, the righteousness from God that depends on faith—"
+      }
+],
+    memoryVerse: {
+      reference: "2 Cor 5:21",
+      text: "For our sake he made him to be sin who knew no sin, so that in him we might become the righteousness of God."
+    }
+  },
+  {
+    week: 33,
+    question: "What is adoption?",
+    answer: "Adoption is an act of God's free grace in which I am received as a son of God with all its rights and privileges.",
+    answerChild: "Adoption is an act of God's free grace in which I am received as a son of God with all its rights and privileges.",
+    proofTexts: [
+      {
+            reference: "John 1:12",
+            text: "But to all who did receive him, who believed in his name, he gave the right to become children of God,"
+      },
+      {
+            reference: "Eph 1:5",
+            text: "he predestined us for adoption to himself as sons through Jesus Christ, according to the purpose of his will,"
+      },
+      {
+            reference: "Eph 5:1",
+            text: "Therefore be imitators of God, as beloved children."
+      },
+      {
+            reference: "Gal 4:7",
+            text: "So you are no longer a slave, but a son, and if a son, then an heir through God."
+      },
+      {
+            reference: "Gal 4:31",
+            text: "So, brothers, we are not children of the slave but of the free woman."
+      },
+      {
+            reference: "1 John 3:1-3",
+            text: "See what kind of love the Father has given to us, that we should be called children of God; and so we are. The reason why the world does not know us is that it did not know him. Beloved, we are God’s children now, and what we will be has not yet appeared; but we know that when he appears we shall be like him, because we shall see him as he is. And everyone who thus hopes in him purifies himself as he is pure."
+      }
+],
+    memoryVerse: {
+      reference: "Gal 4:7",
+      text: "So you are no longer a slave, but a son, and if a son, then an heir through God."
+    }
+  },
+  {
+    week: 34,
+    question: "What is sanctification?",
+    answer: "Sanctification is the work of God's Spirit by which I am renewed after the image of God and am enabled more and more to die to sin and live to righteousness.",
+    answerChild: "Sanctification is being renewed after the image of God.",
+    proofTexts: [
+      {
+            reference: "John 17:17",
+            text: "Sanctify them in the truth; your word is truth."
+      },
+      {
+            reference: "Eph 2:10",
+            text: "For we are his workmanship, created in Christ Jesus for good works, which God prepared beforehand, that we should walk in them."
+      },
+      {
+            reference: "Eph 4:22-24",
+            text: "to put off your old self, which belongs to your former manner of life and is corrupt through deceitful desires, and to be renewed in the spirit of your minds, and to put on the new self, created after the likeness of God in true righteousness and holiness."
+      },
+      {
+            reference: "Phil 2:12-13",
+            text: "Therefore, my beloved, as you have always obeyed, so now, not only as in my presence but much more in my absence, work out your own salvation with fear and trembling, for it is God who works in you, both to will and to work for his good pleasure."
+      },
+      {
+            reference: "1 Thess 5:23",
+            text: "Now may the God of peace himself sanctify you completely, and may your whole spirit and soul and body be kept blameless at the coming of our Lord Jesus Christ."
+      }
+],
+    memoryVerse: {
+      reference: "John 17:17",
+      text: "Sanctify them in the truth; your word is truth."
+    }
+  },
+  {
+    week: 35,
+    question: "What do you believe about the Holy Spirit?",
+    answer: "The Holy Spirit is true and eternal God together with the Father and the Son.",
+    answerChild: "The Holy Spirit is true and eternal God together with the Father and the Son.",
+    proofTexts: [
+      {
+            reference: "Gen 1:1-2",
+            text: "[Text for Gen 1:1-2]"
+      },
+      {
+            reference: "Matt 28:19",
+            text: "[Text for Matt 28:19]"
+      },
+      {
+            reference: "Acts 5:3-4",
+            text: "[Text for Acts 5:3-4]"
+      },
+      {
+            reference: "1 Cor 3:16",
+            text: "[Text for 1 Cor 3:16]"
+      }
+],
+    memoryVerse: {
+      reference: "John 14:16-17",
+      text: "And I will ask the Father, and he will give you another Helper, to be with you forever, even the Spirit of truth, whom the world cannot receive, because it neither sees him nor knows him. You know him, for he dwells with you and will be in you."
+    }
+  },
+  {
+    week: 36,
+    question: "What does the Holy Spirit do for you?",
+    answer: "The Holy Spirit unites me to Christ, convicts me of sin, comforts me, and sanctifies me.",
+    answerChild: "The Holy Spirit unites me to Christ, convicts me of sin, comforts me, and sanctifies me.",
+    proofTexts: [
+      {
+            reference: "Eph 2:8",
+            text: "[Text for Eph 2:8]"
+      },
+      {
+            reference: "Eph 3:17",
+            text: "[Text for Eph 3:17]"
+      },
+      {
+            reference: "1 Thess 1:6",
+            text: "[Text for 1 Thess 1:6]"
+      },
+      {
+            reference: "2 Thess 2:13",
+            text: "[Text for 2 Thess 2:13]"
+      }
+],
+    memoryVerse: {
+      reference: "2 Thess 2:13",
+      text: "[Text for 2 Thess 2:13]"
+    }
+  },
+  {
+    week: 37,
+    question: "Since you have been saved by grace alone through Christ, without any merit of your own, why must you yet do good works?",
+    answer: "I must do good works because Christ also renews me by his Holy Spirit to be his image, so that I might show thankfulness to God for his mercy.",
+    answerChild: "I do good works to show thankfulness to God.",
+    proofTexts: [
+      {
+            reference: "2 Cor 3:18",
+            text: "[Text for 2 Cor 3:18]"
+      },
+      {
+            reference: "Rom 12:1-2",
+            text: "[Text for Rom 12:1-2]"
+      },
+      {
+            reference: "Eph 2:10",
+            text: "[Text for Eph 2:10]"
+      }
+],
+    memoryVerse: {
+      reference: "Eph 2:10",
+      text: "[Text for Eph 2:10]"
+    }
+  },
+  {
+    week: 38,
+    question: "What is prayer?",
+    answer: "Prayer is an offering up of my desires to God for things agreeable to his will, in the name of Christ, with confession of my sins and thankfulness for his mercies.",
+    answerChild: "Prayer is offering up my desires to God.",
+    proofTexts: [
+      {
+            reference: "Gen 17:22",
+            text: "[Text for Gen 17:22]"
+      },
+      {
+            reference: "Gen 18:33",
+            text: "[Text for Gen 18:33]"
+      },
+      {
+            reference: "Neh 1:4-11",
+            text: "[Text for Neh 1:4-11]"
+      },
+      {
+            reference: "Neh 2:4",
+            text: "[Text for Neh 2:4]"
+      },
+      {
+            reference: "Matt 6:6",
+            text: "[Text for Matt 6:6]"
+      },
+      {
+            reference: "Rom 8:26-27",
+            text: "[Text for Rom 8:26-27]"
+      }
+],
+    memoryVerse: {
+      reference: "Ps 62:8",
+      text: "[Text for Ps 62:8]"
+    }
+  },
+  {
+    week: 39,
+    question: "What is the church?",
+    answer: "The church is an assembly of baptized believers in which the gospel is truly preached and the ordinances are rightly administered.",
+    answerChild: "The church is an assembly of baptized believers in which the gospel is truly preached and the ordinances are rightly administered.",
+    proofTexts: [
+      {
+            reference: "Matt 18:20",
+            text: "[Text for Matt 18:20]"
+      },
+      {
+            reference: "Acts 2:42",
+            text: "[Text for Acts 2:42]"
+      }
+],
+    memoryVerse: {
+      reference: "1 Cor 12:12-13",
+      text: "[Text for 1 Cor 12:12-13]"
+    }
+  },
+  {
+    week: 40,
+    question: "What is the gospel?",
+    answer: "The gospel is the good news that those who repent and believe in the death and resurrection of Christ for their sins will be forgiven.",
+    answerChild: "The gospel is the good news that those who repent and believe in the death and resurrection of Christ for their sins will be forgiven.",
+    proofTexts: [
+      {
+            reference: "1 Cor 15:3-7",
+            text: "[Text for 1 Cor 15:3-7]"
+      },
+      {
+            reference: "Rom 1:16",
+            text: "[Text for Rom 1:16]"
+      }
+],
+    memoryVerse: {
+      reference: "Rom 1:16",
+      text: "[Text for Rom 1:16]"
+    }
+  },
+  {
+    week: 41,
+    question: "To whom should you preach the gospel?",
+    answer: "I should preach the gospel to all people in all nations to the end of the earth.",
+    answerChild: "I should preach the gospel to all people in all nations to the end of the earth.",
+    proofTexts: [
+      {
+            reference: "Matt 28:19-20",
+            text: "[Text for Matt 28:19-20]"
+      },
+      {
+            reference: "Acts 1:8",
+            text: "[Text for Acts 1:8]"
+      }
+],
+    memoryVerse: {
+      reference: "Matt 28:19-20",
+      text: "[Text for Matt 28:19-20]"
+    }
+  },
+  {
+    week: 42,
+    question: "What has Christ commanded for the church's worship?",
+    answer: "Reading, preaching, and singing the Word of God, prayer, baptism, and the Lord's Supper are all parts of the worship of God.",
+    answerChild: "Reading, preaching, singing, prayer, baptism, and the Lord's Supper.",
+    proofTexts: [
+      {
+            reference: "1 Tim 2:1-2",
+            text: "[Text for 1 Tim 2:1-2]"
+      },
+      {
+            reference: "1 Tim 4:13",
+            text: "[Text for 1 Tim 4:13]"
+      },
+      {
+            reference: "Col 3:16",
+            text: "[Text for Col 3:16]"
+      },
+      {
+            reference: "Matt 28:19",
+            text: "[Text for Matt 28:19]"
+      },
+      {
+            reference: "1 Cor 11:24-26",
+            text: "[Text for 1 Cor 11:24-26]"
+      }
+],
+    memoryVerse: {
+      reference: "1 Cor 14:40",
+      text: "[Text for 1 Cor 14:40]"
+    }
+  },
+  {
+    week: 43,
+    question: "What is baptism?",
+    answer: "Baptism is an ordinance of the New Testament, instituted by Jesus Christ, to be a sign of the believer's fellowship with Christ in his death, burial, and resurrection.",
+    answerChild: "Baptism is a sign of fellowship with Christ.",
+    proofTexts: [
+      {
+            reference: "John 3:23",
+            text: "[Text for John 3:23]"
+      },
+      {
+            reference: "Acts 2:41",
+            text: "[Text for Acts 2:41]"
+      },
+      {
+            reference: "Acts 8:12",
+            text: "[Text for Acts 8:12]"
+      },
+      {
+            reference: "Acts 8:35-38",
+            text: "[Text for Acts 8:35-38]"
+      },
+      {
+            reference: "Col 2:12",
+            text: "[Text for Col 2:12]"
+      }
+],
+    memoryVerse: {
+      reference: "Rom 6:4",
+      text: "[Text for Rom 6:4]"
+    }
+  },
+  {
+    week: 44,
+    question: "What is the duty of those who are rightly baptized?",
+    answer: "It is the duty of those who are rightly baptized to join themselves to some visible and orderly church of Jesus Christ.",
+    answerChild: "It is the duty of those who are rightly baptized to join themselves to some visible and orderly church of Jesus Christ.",
+    proofTexts: [
+      {
+            reference: "Acts 2:47",
+            text: "[Text for Acts 2:47]"
+      },
+      {
+            reference: "Heb 10:25",
+            text: "not neglecting to meet together, as is the habit of some, but encouraging one another, and all the more as you see the Day drawing near."
+      }
+],
+    memoryVerse: {
+      reference: "Heb 10:25",
+      text: "[Text for Heb 10:25]"
+    }
+  },
+  {
+    week: 45,
+    question: "What is the Lord's Supper?",
+    answer: "The Lord's Supper is an ordinance of the New Testament, instituted by Jesus Christ, to be a sign of the believer's communion with Christ and his church through his broken body and shed blood.",
+    answerChild: "The Lord's Supper is a sign of communion with Christ.",
+    proofTexts: [
+      {
+            reference: "Mark 14:22-24",
+            text: "And as they were eating, he took bread, and after blessing it broke it and gave it to them, and said, “Take; this is my body.” And he took a cup, and when he had given thanks he gave it to them, and they all drank of it. And he said to them, “This is my blood of the covenant, which is poured out for many."
+      },
+      {
+            reference: "1 Cor 11:23-29",
+            text: "For I received from the Lord what I also delivered to you, that the Lord Jesus on the night when he was betrayed took bread, and when he had given thanks, he broke it, and said, “This is my body, which is for you. Do this in remembrance of me.” In the same way also he took the cup, after supper, saying, “This cup is the new covenant in my blood. Do this, as often as you drink it, in remembrance of me.” For as often as you eat this bread and drink the cup, you proclaim the Lord’s death until he comes.\n\n  Whoever, therefore, eats the bread or drinks the cup of the Lord in an unworthy manner will be guilty concerning the body and blood of the Lord. Let a person examine himself, then, and so eat of the bread and drink of the cup. For anyone who eats and drinks without discerning the body eats and drinks judgment on himself."
+      }
+],
+    memoryVerse: {
+      reference: "Luke 22:19-20",
+      text: "And he took bread, and when he had given thanks, he broke it and gave it to them, saying, “This is my body, which is given for you. Do this in remembrance of me.” And likewise the cup after they had eaten, saying, “This cup that is poured out for you is the new covenant in my blood."
+    }
+  },
+  {
+    week: 46,
+    question: "What benefits do believers receive from Christ at their death?",
+    answer: "Believers are at their death made perfect in holiness and immediately pass into the presence of God forever.",
+    answerChild: "Believers pass into God's presence forever.",
+    proofTexts: [
+      {
+            reference: "Heb 12:23",
+            text: "and to the assembly of the firstborn who are enrolled in heaven, and to God, the judge of all, and to the spirits of the righteous made perfect,"
+      },
+      {
+            reference: "Phil 1:23",
+            text: "I am hard pressed between the two. My desire is to depart and be with Christ, for that is far better."
+      },
+      {
+            reference: "2 Cor 5:8",
+            text: "Yes, we are of good courage, and we would rather be away from the body and at home with the Lord."
+      },
+      {
+            reference: "Luke 23:43",
+            text: "And he said to him, “Truly, I say to you, today you will be with me in paradise.”"
+      },
+      {
+            reference: "1 Thess 4:14",
+            text: "For since we believe that Jesus died and rose again, even so, through Jesus, God will bring with him those who have fallen asleep."
+      },
+      {
+            reference: "Isa 57:2",
+            text: "he enters into peace;\n    they rest in their beds\n        who walk in their uprightness."
+      },
+      {
+            reference: "Job 19:26",
+            text: "And after my skin has been thus destroyed,\n        yet in my flesh I shall see God,"
+      }
+],
+    memoryVerse: {
+      reference: "John 3:16",
+      text: "“For God so loved the world, that he gave his only Son, that whoever believes in him should not perish but have eternal life."
+    }
+  },
+  {
+    week: 47,
+    question: "What will be done to the wicked at death?",
+    answer: "The wicked will at their death be cast into the torments of hell.",
+    answerChild: "The wicked will at their death be cast into the torments of hell.",
+    proofTexts: [
+      {
+            reference: "Ps 9:16-17",
+            text: "The LORD has made himself known; he has executed judgment;\n        the wicked are snared in the work of their own hands. Higgaion. Selah\n    \n    \n    The wicked shall return to Sheol,\n        all the nations that forget God."
+      },
+      {
+            reference: "Luke 12:5",
+            text: "But I will warn you whom to fear: fear him who, after he has killed, has authority to cast into hell. Yes, I tell you, fear him!"
+      },
+      {
+            reference: "Rom 2:8-9",
+            text: "but for those who are self-seeking and do not obey the truth, but obey unrighteousness, there will be wrath and fury. There will be tribulation and distress for every human being who does evil, the Jew first and also the Greek,"
+      },
+      {
+            reference: "Rom 2:12",
+            text: "For all who have sinned without the law will also perish without the law, and all who have sinned under the law will be judged by the law."
+      },
+      {
+            reference: "2 Thess 1:8-9",
+            text: "[Text for 2 Thess 1:8-9]"
+      },
+      {
+            reference: "Rev 20:12-15",
+            text: "And I saw the dead, great and small, standing before the throne, and books were opened. Then another book was opened, which is the book of life. And the dead were judged by what was written in the books, according to what they had done. And the sea gave up the dead who were in it, Death and Hades gave up the dead who were in them, and they were judged, each one of them, according to what they had done. Then Death and Hades were thrown into the lake of fire. This is the second death, the lake of fire. And if anyone’s name was not found written in the book of life, he was thrown into the lake of fire."
+      }
+],
+    memoryVerse: {
+      reference: "Ps 9:16",
+      text: "The LORD has made himself known; he has executed judgment;\n        the wicked are snared in the work of their own hands. Higgaion. Selah"
+    }
+  },
+  {
+    week: 48,
+    question: "Where is Christ now?",
+    answer: "Christ ascended into heaven and sits at the Father's right hand.",
+    answerChild: "Christ ascended into heaven and sits at the Father's right hand.",
+    proofTexts: [
+      {
+            reference: "Rom 8:34",
+            text: "Who is to condemn? Christ Jesus is the one who died—more than that, who was raised—who is at the right hand of God, who indeed is interceding for us."
+      },
+      {
+            reference: "Col 3:1",
+            text: "If then you have been raised with Christ, seek the things that are above, where Christ is, seated at the right hand of God."
+      },
+      {
+            reference: "Heb 1:3",
+            text: "He is the radiance of the glory of God and the exact imprint of his nature, and he upholds the universe by the word of his power. After making purification for sins, he sat down at the right hand of the Majesty on high,"
+      },
+      {
+            reference: "Heb 10:12",
+            text: "But when Christ had offered for all time a single sacrifice for sins, he sat down at the right hand of God,"
+      },
+      {
+            reference: "Heb 12:2",
+            text: "looking to Jesus, the founder and perfecter of our faith, who for the joy that was set before him endured the cross, despising the shame, and is seated at the right hand of the throne of God."
+      }
+],
+    memoryVerse: {
+      reference: "Eph 1:20-21",
+      text: "that he worked in Christ when he raised him from the dead and seated him at his right hand in the heavenly places, far above all rule and authority and power and dominion, and above every name that is named, not only in this age but also in the one to come."
+    }
+  },
+  {
+    week: 49,
+    question: "How does Christ's resurrection benefit you?",
+    answer: "Christ's resurrection is a certain promise of my glorious resurrection.",
+    answerChild: "Christ's resurrection is a certain promise of my glorious resurrection.",
+    proofTexts: [
+      {
+            reference: "1 Cor 15:43",
+            text: "It is sown in dishonor; it is raised in glory. It is sown in weakness; it is raised in power."
+      },
+      {
+            reference: "Matt 10:32",
+            text: "So everyone who acknowledges me before men, I also will acknowledge before my Father who is in heaven,"
+      },
+      {
+            reference: "1 John 3:2",
+            text: "Beloved, we are God’s children now, and what we will be has not yet appeared; but we know that when he appears we shall be like him, because we shall see him as he is."
+      },
+      {
+            reference: "1 Thess 4:17",
+            text: "Then we who are alive, who are left, will be caught up together with them in the clouds to meet the Lord in the air, and so we will always be with the Lord."
+      }
+],
+    memoryVerse: {
+      reference: "1 Thess 4:13-14",
+      text: "But we do not want you to be uninformed, brothers, about those who are asleep, that you may not grieve as others do who have no hope. For since we believe that Jesus died and rose again, even so, through Jesus, God will bring with him those who have fallen asleep."
+    }
+  },
+  {
+    week: 50,
+    question: "How does Christ's ascension into heaven benefit you?",
+    answer: "Christ is my advocate in heaven before his Father and my certain promise that he will take me up to himself.",
+    answerChild: "Christ is my advocate in heaven before his Father and my certain promise that he will take me up to himself.",
+    proofTexts: [
+      {
+            reference: "1 John 2:1",
+            text: "My little children, I am writing these things to you so that you may not sin. But if anyone does sin, we have an advocate with the Father, Jesus Christ the righteous."
+      },
+      {
+            reference: "Heb 4:15",
+            text: "[Text for Heb 4:15]"
+      }
+],
+    memoryVerse: {
+      reference: "Rom 8:34",
+      text: "Who is to condemn? Christ Jesus is the one who died—more than that, who was raised—who is at the right hand of God, who indeed is interceding for us."
+    }
+  },
+  {
+    week: 51,
+    question: "Will Jesus Christ come again?",
+    answer: "Yes. Jesus Christ will come a second time in power and glory, which is the joy and hope of all believers.",
+    answerChild: "Yes. Jesus Christ will come a second time in power and glory, which is the joy and hope of all believers.",
+    proofTexts: [
+      {
+            reference: "Matt 25:31-43",
+            text: "“When the Son of Man comes in his glory, and all the angels with him, then he will sit on his glorious throne. Before him will be gathered all the nations, and he will separate people one from another as a shepherd separates the sheep from the goats. And he will place the sheep on his right, but the goats on the left. Then the King will say to those on his right, ‘Come, you who are blessed by my Father, inherit the kingdom prepared for you from the foundation of the world. For I was hungry and you gave me food, I was thirsty and you gave me drink, I was a stranger and you welcomed me, I was naked and you clothed me, I was sick and you visited me, I was in prison and you came to me.’ Then the righteous will answer him, saying, ‘Lord, when did we see you hungry and feed you, or thirsty and give you drink? And when did we see you a stranger and welcome you, or naked and clothe you? And when did we see you sick or in prison and visit you?’ And the King will answer them, ‘Truly, I say to you, as you did it to one of the least of these my brothers, you did it to me.’\n\n  “Then he will say to those on his left, ‘Depart from me, you cursed, into the eternal fire prepared for the devil and his angels. For I was hungry and you gave me no food, I was thirsty and you gave me no drink, I was a stranger and you did not welcome me, naked and you did not clothe me, sick and in prison and you did not visit me.’"
+      },
+      {
+            reference: "2 Thess 1:7-10",
+            text: "and to grant relief to you who are afflicted as well as to us, when the Lord Jesus is revealed from heaven with his mighty angels in flaming fire, inflicting vengeance on those who do not know God and on those who do not obey the gospel of our Lord Jesus. They will suffer the punishment of eternal destruction, away from the presence of the Lord and from the glory of his might, when he comes on that day to be glorified in his saints, and to be marveled at among all who have believed, because our testimony to you was believed."
+      },
+      {
+            reference: "2 Tim 4:1",
+            text: "I charge you in the presence of God and of Christ Jesus, who is to judge the living and the dead, and by his appearing and his kingdom:"
+      }
+],
+    memoryVerse: {
+      reference: "Acts 1:11",
+      text: "and said, “Men of Galilee, why do you stand looking into heaven? This Jesus, who was taken up from you into heaven, will come in the same way as you saw him go into heaven.”"
+    }
+  },
+  {
+    week: 52,
+    question: "What will happen to believers after Christ comes again?",
+    answer: "Believers will live with Christ forever in a new heaven and a new earth.",
+    answerChild: "Believers will live with Christ forever in a new heaven and a new earth.",
+    proofTexts: [
+      {
+            reference: "Isa 66:22",
+            text: "“For as the new heavens and the new earth\n        that I make\n    shall remain before me, says the LORD,\n        so shall your offspring and your name remain."
+      },
+      {
+            reference: "1 Thess 4:16-17",
+            text: "For the Lord himself will descend from heaven with a cry of command, with the voice of an archangel, and with the sound of the trumpet of God. And the dead in Christ will rise first. Then we who are alive, who are left, will be caught up together with them in the clouds to meet the Lord in the air, and so we will always be with the Lord."
+      },
+      {
+            reference: "2 Pet 3:10-13",
+            text: "But the day of the Lord will come like a thief, and then the heavens will pass away with a roar, and the heavenly bodies will be burned up and dissolved, and the earth and the works that are done on it will be exposed.\n\n  Since all these things are thus to be dissolved, what sort of people ought you to be in lives of holiness and godliness, waiting for and hastening the coming of the day of God, because of which the heavens will be set on fire and dissolved, and the heavenly bodies will melt as they burn! But according to his promise we are waiting for new heavens and a new earth in which righteousness dwells."
+      },
+      {
+            reference: "Rev 21:1-4",
+            text: "Then I saw a new heaven and a new earth, for the first heaven and the first earth had passed away, and the sea was no more. And I saw the holy city, new Jerusalem, coming down out of heaven from God, prepared as a bride adorned for her husband. And I heard a loud voice from the throne saying, “Behold, the dwelling place of God is with man. He will dwell with them, and they will be his people, and God himself will be with them as their God. He will wipe away every tear from their eyes, and death shall be no more, neither shall there be mourning, nor crying, nor pain anymore, for the former things have passed away.”"
+      }
+],
+    memoryVerse: {
+      reference: "Rev 21:3",
+      text: "And I heard a loud voice from the throne saying, “Behold, the dwelling place of God is with man. He will dwell with them, and they will be his people, and God himself will be with them as their God."
+    }
+  }
+];
+
+// Bonus question
+export const bonusQuestion: CatechismQuestion = {
+  week: 0,
+  question: "What is your only hope in life and death?",
+  answer: "My only hope in life and death is that I am not my own but belong to God and to my Savior Jesus Christ.",
+  answerChild: "My only hope in life and death is that I am not my own but belong to God and to my Savior Jesus Christ.",
+  proofTexts: [
+    { 
+      reference: "1 Cor 6:19-20", 
+      text: "Or do you not know that your body is a temple of the Holy Spirit within you, whom you have from God? You are not your own, for you were bought with a price. So glorify God in your body."
+    },
+    { 
+      reference: "Rom 14:7-9", 
+      text: "For none of us lives to himself, and none of us dies to himself. For if we live, we live to the Lord, and if we die, we die to the Lord. So then, whether we live or whether we die, we are the Lord's. For to this end Christ died and lived again, that he might be Lord both of the dead and of the living."
+    },
+    { 
+      reference: "1 Cor 3:23", 
+      text: "and you are Christ's, and Christ is God's."
+    },
+    { 
+      reference: "Tit 2:14", 
+      text: "who gave himself for us to redeem us from all lawlessness and to purify for himself a people for his own possession who are zealous for good works."
+    }
+  ],
+  memoryVerse: {
+    reference: "Rom 14:7-8",
+    text: "For none of us lives to himself, and none of us dies to himself. For if we live, we live to the Lord, and if we die, we die to the Lord. So then, whether we live or whether we die, we are the Lord's."
+  }
+};
+
+export function getCatechismQuestion(week: number): CatechismQuestion | null {
+  if (week === 0) return bonusQuestion;
+  return catechismQuestions.find(q => q.week === week) || null;
+}
+
+export function getAllCatechismQuestions(): CatechismQuestion[] {
+  return catechismQuestions;
+}

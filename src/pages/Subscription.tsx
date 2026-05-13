@@ -13,11 +13,12 @@ import {
   Clock
 } from 'lucide-react';
 import { getTrialDaysRemaining, hasPremiumAccess } from '../types/user';
-import { createPortalSession, cancelSubscription } from '../services/stripeService';
+import { createPortalSession, cancelSubscription, reactivateSubscription, createCheckoutSession } from '../services/stripeService';
 
 const Subscription = () => {
   const { currentUser } = useAuth();
   const [loading, setLoading] = useState(false);
+  const [reactivating, setReactivating] = useState(false);
   const [showCancelModal, setShowCancelModal] = useState(false);
   const [cancelling, setCancelling] = useState(false);
 
@@ -102,6 +103,40 @@ const Subscription = () => {
       alert('Failed to open billing portal. Please try again.');
     } finally {
       setLoading(false);
+    }
+  };
+
+  // Handle reactivation
+  const handleReactivate = async () => {
+    try {
+      setReactivating(true);
+      const { action } = await reactivateSubscription();
+
+      if (action === 'reactivated') {
+        alert('Your subscription has been reactivated!');
+        window.location.reload();
+      } else if (action === 'new_checkout_required') {
+        // Subscription is fully expired — start a new checkout without trial
+        const plan = currentUser.subscription.plan === 'family' ? 'family' : 'individual';
+        const { url } = await createCheckoutSession(
+          plan,
+          `${window.location.origin}/subscription`,
+          `${window.location.origin}/subscription`,
+          true // skipTrial — returning users don't get another trial
+        );
+        if (url) {
+          window.location.href = url;
+        }
+      } else if (action === 'portal_required') {
+        // Edge case (past_due, etc.) — open billing portal
+        const { url } = await createPortalSession(window.location.href);
+        window.location.href = url;
+      }
+    } catch (error: any) {
+      console.error('Error reactivating subscription:', error);
+      alert('Failed to reactivate subscription. Please try again or contact support.');
+    } finally {
+      setReactivating(false);
     }
   };
 
@@ -351,11 +386,11 @@ const Subscription = () => {
 
             {subscription.status === 'cancelled' && (
               <button
-                onClick={handleManageBilling}
-                disabled={loading}
+                onClick={handleReactivate}
+                disabled={reactivating}
                 className="btn-primary w-full"
               >
-                Reactivate Subscription
+                {reactivating ? 'Reactivating...' : 'Reactivate Subscription'}
               </button>
             )}
           </div>

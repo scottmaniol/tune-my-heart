@@ -51,7 +51,8 @@ export const createSubscription = async (
 export const createCheckoutSession = async (
   plan: 'individual' | 'family',
   successUrl?: string,
-  cancelUrl?: string
+  cancelUrl?: string,
+  skipTrial?: boolean
 ): Promise<{ sessionId: string; url: string }> => {
   try {
     const createCheckoutSessionFn = httpsCallable(functions, 'createCheckoutSession');
@@ -59,12 +60,29 @@ export const createCheckoutSession = async (
       plan,
       successUrl: successUrl || `${window.location.origin}/`,
       cancelUrl: cancelUrl || `${window.location.origin}/signup`,
+      skipTrial: skipTrial || false,
     });
 
     return result.data as { sessionId: string; url: string };
   } catch (error: any) {
     console.error('Error creating checkout session:', error);
     throw new Error(error.message || 'Failed to create checkout session');
+  }
+};
+
+/**
+ * Reactivate a cancelled subscription
+ * Returns the action taken: 'reactivated', 'new_checkout_required', or 'portal_required'
+ */
+export const reactivateSubscription = async (): Promise<{ action: string }> => {
+  try {
+    const reactivateSubscriptionFn = httpsCallable(functions, 'reactivateSubscription');
+    const result = await reactivateSubscriptionFn();
+
+    return result.data as { action: string };
+  } catch (error: any) {
+    console.error('Error reactivating subscription:', error);
+    throw new Error(error.message || 'Failed to reactivate subscription');
   }
 };
 

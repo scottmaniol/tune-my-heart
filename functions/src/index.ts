@@ -17,6 +17,7 @@ export {
   createCheckoutSession,
   createSubscription,
   cancelSubscription,
+  reactivateSubscription,
   createPortalSession,
 } from "./stripe/stripe-functions";
 

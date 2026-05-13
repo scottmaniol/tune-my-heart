@@ -136,11 +136,13 @@ async function handleSubscriptionUpdate(subscription: any) {
   // Stripe sometimes sets status to "active" even during trial period
   let subscriptionStatus: string;
   const hasActiveTrial = subscription.trial_end && subscription.trial_end * 1000 > Date.now();
-  
+
   if (status === "trialing" || hasActiveTrial) {
     subscriptionStatus = "trial";
   } else if (status === "active") {
-    subscriptionStatus = "active";
+    // If subscription is active but set to cancel at period end, mark as cancelled
+    // so the UI shows the correct state. When reactivated, this will flip back.
+    subscriptionStatus = subscription.cancel_at_period_end ? "cancelled" : "active";
   } else if (status === "past_due") {
     subscriptionStatus = "past_due";
   } else if (status === "canceled" || status === "unpaid") {
